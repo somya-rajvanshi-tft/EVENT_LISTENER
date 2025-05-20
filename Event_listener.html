@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Task List</title>
+  <style>
+    .done {
+      text-decoration: line-through;
+      color: gray;
+    }
+    .filters button {
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Task List</h1>
+  <input type="text" id="taskInput" placeholder="Enter a task" />
+  <button id="addTaskBtn">Add Task</button>
+  <div class="filters">
+    <button data-filter="all">All</button>
+    <button data-filter="completed">Completed</button>
+    <button data-filter="pending">Pending</button>
+  </div>
+  <ul id="taskList"></ul>
+
+  <script src="Event_listener.js"></script>
+</body>
+</html>
